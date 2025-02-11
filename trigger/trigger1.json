@@ -1,0 +1,24 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline1",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/inputfolder/blobs/staging/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/f7329c74-1152-4285-ad7d-26fe7eded9a5/resourceGroups/Project1Azure/providers/Microsoft.Storage/storageAccounts/smartvehicleproject",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
