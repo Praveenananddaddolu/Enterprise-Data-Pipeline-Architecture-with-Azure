@@ -45,7 +45,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"folderpath": {
-								"value": "@concat(formatDateTime(utcnow(),'yyyy'),'/',formatDateTime(utcnow(),'mm'),'/',formatDateTime(utcnow(),'dd'),'/')",
+								"value": "@concat(formatDateTime(utcnow(),'yyyy'),'/',formatDateTime(utcnow(),'MM'),'/',formatDateTime(utcnow(),'dd'),'/')",
 								"type": "Expression"
 							}
 						}
@@ -57,7 +57,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"landingfolder": {
-								"value": "@concat('landing/',formatDateTime(utcnow(),'yyyy'),'/',formatDateTime(utcnow(),'mm'),'/',formatDateTime(utcnow(),'dd'),'/')",
+								"value": "@concat('landing/',formatDateTime(utcnow(),'yyyy'),'/',formatDateTime(utcnow(),'MM'),'/',formatDateTime(utcnow(),'dd'),'/')",
 								"type": "Expression"
 							}
 						}
