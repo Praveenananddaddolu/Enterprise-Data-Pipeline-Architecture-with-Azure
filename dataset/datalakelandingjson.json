@@ -1,0 +1,27 @@
+{
+	"name": "datalakelandingjson",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeSmartvehicle",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"landingfolder": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@dataset().landingfolder",
+					"type": "Expression"
+				},
+				"fileSystem": "inputfolder"
+			}
+		},
+		"schema": {}
+	}
+}
