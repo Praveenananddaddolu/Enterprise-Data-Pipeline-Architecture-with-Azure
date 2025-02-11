@@ -1,0 +1,9 @@
+{
+	"name": "smartvehicleproject",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "43a44da4-03f8-4c69-a147-c344fd32c47f",
+		"tenantId": "3be46ed5-146e-4fa4-9c17-6f14c5d4bb88"
+	}
+}
