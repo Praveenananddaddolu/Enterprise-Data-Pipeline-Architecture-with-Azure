@@ -1,0 +1,19 @@
+{
+	"name": "stagingvalidjsonds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeSmartvehicle",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "staging",
+				"fileSystem": "inputfolder"
+			}
+		},
+		"schema": {}
+	}
+}
